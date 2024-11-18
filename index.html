@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Win Event Tickets!</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="notification-icon">
+				<span class="bell" id="notification-bell">🔔</span>
+			</div>
+		</header>
+
+		<main>
+			<h1>Win Tickets for Event X!</h1>
+			<img src="https://picsum.photos/300/200" alt="Event photo" class="event-image">
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+			<form id="ticketForm">
+				<div class="form-group">
+					<input type="text" id="name" required placeholder="Your Name">
+				</div>
+				<div class="form-group">
+					<input type="email" id="email" required placeholder="Your Email">
+				</div>
+				<div class="form-group">
+					<input type="text" id="city" required placeholder="Your City">
+				</div>
+
+                <div class="container checkbox">
+                    <input type="checkbox" id="cbx" style="display: none;">
+                    <label for="cbx" class="check">
+                        <svg width="18px" height="18px" viewBox="0 0 18 18">
+                            <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                            <polyline points="1 9 7 14 15 4"></polyline>
+                        </svg>
+                        <span class="checkbox-text">I've read the terms and conditions</span>
+                    </label>
+                </div>
+
+				<button type="button" class="btn">
+					<strong>ENTER NOW</strong>
+					<div id="container-stars">
+						<div id="stars"></div>
+					</div>
+
+					<div id="glow">
+						<div class="circle"></div>
+						<div class="circle"></div>
+					</div>
+					</button>
+			</form>
+		</main>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
